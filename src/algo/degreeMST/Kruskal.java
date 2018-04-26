@@ -35,9 +35,7 @@ public class Kruskal {
 		// Create subsets for all vertices
 		Subset subsets[] = new Subset[g.V];
 		for (int v = 0; v < g.V; ++v) {
-			subsets[v]=new Subset();
-			subsets[v].parent = v;
-			subsets[v].rank = 0;
+			subsets[v] = new Subset(v, 0);
 		}
 
 		// if priority edge queue is not empty, then MST is not complete.
