@@ -13,16 +13,16 @@ public class Tester {
 		  
                 9
             0-------1
-            | \     |
-           8|  6\   |12
-            |     \ |
+            | \     |  \7
+           8|  6\   |12 >4
+            |     \ |  /4
             2-------3
                 5    
                 
 		*/
 
-		int V = 4; // Number of vertices (0,1,2,3)
-		int E = 5; // Number of edges ( 0:1 -> 9,  0:2 -> 8,  0:3 -> 6,  1:3 -> 12,  2:3 -> 5 )
+		int V = 5; // Number of vertices (0,1,2,3,4)
+		int E = 7; // Number of edges ( 0:1 -> 9,  0:2 -> 8,  0:3 -> 6,  1:3 -> 12,  2:3 -> 5,  1:4 -> 7,  3:4 -> 4 )
 
 		// Create graph from graphic above.
 		Graph g = new Graph(V, E);
@@ -31,6 +31,8 @@ public class Tester {
 		g.edge[2] = new Edge(0,3,6);
 		g.edge[3] = new Edge(1,3,12);
 		g.edge[4] = new Edge(2,3,5);
+		g.edge[5] = new Edge(1,4,7);
+		g.edge[6] = new Edge(3,4,4);
 		
 		
 
