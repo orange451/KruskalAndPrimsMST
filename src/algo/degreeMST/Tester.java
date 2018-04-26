@@ -9,7 +9,7 @@ public class Tester {
 	public static void main (String[] args) {
 
 		/* 
-		  Graph used for both Kruskals and Prims!
+		  Graph used for both Kruskals and Prims tests.
 		  
                 9
             0-------1
@@ -21,8 +21,8 @@ public class Tester {
                 
 		*/
 
-		int V = 4; // Number of vertices
-		int E = 5; // Number of edges
+		int V = 4; // Number of vertices (0,1,2,3)
+		int E = 5; // Number of edges ( 0:1 -> 9,  0:2 -> 8,  0:3 -> 6,  1:3 -> 12,  2:3 -> 5 )
 
 		// Create graph from graphic above.
 		Graph g = new Graph(V, E);
