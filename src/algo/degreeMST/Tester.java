@@ -11,13 +11,14 @@ public class Tester {
 		/* 
 		  Graph used for both Kruskals and Prims!
 		  
-                10
+                9
             0-------1
             | \     |
-           6|  5\   |15
+           8|  6\   |12
             |     \ |
             2-------3
-                4    
+                5    
+                
 		*/
 
 		int V = 4; // Number of vertices
@@ -25,11 +26,11 @@ public class Tester {
 
 		// Create graph from graphic above.
 		Graph g = new Graph(V, E);
-		g.edge[0] = new Edge(0,1,10);
-		g.edge[1] = new Edge(0,2,6);
-		g.edge[2] = new Edge(0,3,5);
-		g.edge[3] = new Edge(1,3,15);
-		g.edge[4] = new Edge(2,3,4);
+		g.edge[0] = new Edge(0,1,9);
+		g.edge[1] = new Edge(0,2,8);
+		g.edge[2] = new Edge(0,3,6);
+		g.edge[3] = new Edge(1,3,12);
+		g.edge[4] = new Edge(2,3,5);
 		
 		
 
